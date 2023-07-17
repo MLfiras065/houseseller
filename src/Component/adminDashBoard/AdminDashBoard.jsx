@@ -1,7 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 const AdminDashBoard = () => {
   const [update, setUpdate] = useState(false);
+  const [data,setData]=useState([])
+  const get=()=>{
+    axios.get("http://localhost:3001/api/user/").then((response)=>{
+setData(response.data)
+    }).catch((err)=>{
+      console.log(err);
+    })
+  }
+  const getCust=()=>{
+    axios.get("http://localhost:3001/api/customer/").then((response)=>{
+setData(response.data)
+    }).catch((err)=>{
+      console.log(err);
+    })
+  }
   const addCategory = (name, description) => {
     axios
       .post("http://localhost:3001/api/admin/addcat", {
@@ -43,22 +58,34 @@ const AdminDashBoard = () => {
       .then(() => setUpdate(!update))
       .catch((err) => console.log(err));
   };
+  useEffect(()=>{get()},[])
   return (<div>
-    <div className="acceptedUsers">
-      accepted users:
-      <div>test1@gmail.com</div>
-      <div>test2@gmail.com</div>
-      <div>test3@gmail.com</div>
-      <div>test4@gmail.com</div>
-    <button onClick={handldele}></button>
+      {data.map((el, index) => (
+      <div className="acceptedUsers" key={index}>
+           accepted users:
+            <div>{el.email}</div>
+            <div >
+     
+  
+    <button onClick={()=>handedelUser(el.id) }>delete</button>
     </div>
+      </div>
+    ))
+    }
+    
     <div className="acceptedClient">
-      accepted client:
-      <div>client1@gmail.com</div>
-      <div>client2@gmail.com</div>
-      <div>client3@gmail.com</div>
-      <div>client4@gmail.com</div>
-      <button onClick={handedelUser}></button>
+    {data.map((el, index) => (
+      <div className="acceptedUsers" key={index}>
+           accepted Client:
+            <div>{el.email}</div>
+            <div >
+     
+  
+    <button onClick={()=>handldele(el.id) }>delete</button>
+    </div>
+      </div>
+    ))
+    }
     </div>
     <div className="static">
     <div>email:test@gmail.com</div>
