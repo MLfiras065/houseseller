@@ -1,0 +1,107 @@
+body{background: var(--pp-3-background, linear-gradient(134deg, #984D38 0%, #181E41 63.29%));}
+.nav{
+  border-radius: 4px;
+  background: transparent;
+  padding: 10px 22px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  }
+  .addproduct{
+    display: flex;
+    justify-content: space-around;
+    border: 7px solid #8f8f8fa6;
+    padding: 50px;
+    border-radius: 148px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+
+  }
+  .update{
+    display: flex;
+    justify-content: space-around;
+    border: 7px solid #8f8f8fa6;
+    padding: 50px;
+    border-radius: 148px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .register{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    border: 7px solid #8f8f8fa6;
+    padding: 50px;
+    border-radius: 148px;
+  }
+  .acceptedUsers{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    border: 7px solid #8f8f8fa6;
+    padding: 50px;
+    border-radius: 148px;
+  }
+ .acceptedClient{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  border: 7px solid #8f8f8fa6;
+  padding: 50px;
+  border-radius: 148px;
+ }
+ .static{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  border: 7px solid #8f8f8fa6;
+  padding: 50px;
+  border-radius: 148px;
+ }
+ .Aboutus{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  border: 7px solid #8f8f8fa6;
+  padding: 50px;
+  border-radius: 148px;
+ }
+ .login{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  border: 7px solid #8f8f8fa6;
+  padding: 50px;
+  border-radius: 148px;
+ }
+ .img{
+  width: 77%;
+  height: 36%;
+ }
+ img{
+  width: 79%;
+  height: 135%;
+ }
