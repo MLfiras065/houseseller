@@ -58,7 +58,7 @@ setData(response.data)
       .then(() => setUpdate(!update))
       .catch((err) => console.log(err));
   };
-  useEffect(()=>{get()},[])
+  useEffect(()=>{get();getCust()},[])
   return (<div>
       {data.map((el, index) => (
       <div className="acceptedUsers" key={index}>

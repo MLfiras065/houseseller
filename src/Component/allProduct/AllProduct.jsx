@@ -16,14 +16,13 @@ const AllProduct = ({ el }) => {
     setLocation("");
     setNumbOfrooms("");
     setNumbOfBathroom("");
-    // setImage("");
+   
     setArea("");
     setPrice("");
     setUp(false);
   };
   const fetchData=()=>{
     axios.get('http://localhost:3001/api/user/get').then((result)=>{
-      // setData(result)
       console.log(result);
     }).catch((err)=>{
       console.log(err)

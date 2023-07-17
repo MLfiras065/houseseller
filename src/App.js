@@ -34,7 +34,7 @@ const App = () => {
         lastName: lastName,
         email: email,
         password: password,
-        // accepted:accepted,
+      
         role:role
       })
       .then(() => {

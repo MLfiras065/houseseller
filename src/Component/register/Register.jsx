@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import Cookies from "js-cookie";
+
 
 const Register = ({ addUser }) => {
-  // const [loggedIn,setLoggedIn]=useState(false)
+  
   const [image,setImage]=useState('')
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
